@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffe0eb">
+  <meta name="description" content="A little love corner for the days we miss each other.">
+  <title>Our Love Corner ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Our Love Corner home">
+      <span class="brand-heart">♡</span>
+      <span>
+        <strong>Our Love Corner ♡</strong>
+        <small>Because you miss me... and I miss you too ♡</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="#home">⌂ Home</a>
+      <a href="#always">♡ I'm Here</a>
+      <a href="#notes">♡ Love Notes</a>
+      <a href="#open-when">✉ Open When</a>
+      <a href="#forever">❀ Forever Us</a>
+    </nav>
+
+    <span class="top-love">I love you ♡</span>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-decor decor-one">♡</div>
+      <div class="hero-decor decor-two">♥</div>
+      <div class="hero-decor decor-three">✦</div>
+
+      <div class="teddy-scene" role="img" aria-label="A teddy bear cuddling a pink heart">
+        <div class="moon-glow"></div>
+        <div class="floating-heart h1">♡</div>
+        <div class="floating-heart h2">♥</div>
+        <div class="speech-bubble">You're always<br>in my heart ♡</div>
+        <div class="teddy">🧸</div>
+        <div class="big-heart">I Miss You<br>So Much ♡</div>
+        <div class="cloud cloud-a"></div>
+        <div class="cloud cloud-b"></div>
+      </div>
+
+      <div class="hero-copy">
+        <div class="hero-paper">
+          <p class="eyebrow">A little corner made with all my love</p>
+          <h1>My Shona...<br><span>I Miss You So Much ♡</span></h1>
+          <p class="hero-message">
+            I know you're missing me, and it makes me miss you even more.
+            Just know that no matter where you are, I'm always with you —
+            in your heart, in your thoughts, and in every little moment.
+            <span class="pink">♡</span>
+          </p>
+          <button class="primary-button" id="hug-button"><span>♥</span> Give Me a Hug</button>
+        </div>
+      </div>
+
+      <aside class="checklist">
+        <div class="bow">🎀</div>
+        <p>☑ You are loved</p>
+        <p>☑ You are enough</p>
+        <p>☑ You are mine ♡</p>
+      </aside>
+
+      <div class="side-flowers" aria-hidden="true">🌷<br>🌸</div>
+    </section>
+
+    <!-- ORIGINAL THREE CARDS -->
+    <section class="cards-grid" aria-label="Love and comfort cards">
+      <article class="panel reasons" id="always">
+        <div class="panel-heading">
+          <span class="heading-icon">♡</span>
+          <div>
+            <h2>Reasons You Miss Me...</h2>
+            <p>And why I'll always be here ♡</p>
+          </div>
+        </div>
+
+        <ul class="reason-list">
+          <li><span>♥</span>Because you love my hugs...</li>
+          <li><span>☺</span>Because you enjoy my silly jokes...</li>
+          <li><span>☆</span>Because you feel safe with me...</li>
+          <li><span>❀</span>Because you want to talk to me always...</li>
+          <li><span>∞</span>Because you're my favourite person ♡</li>
+        </ul>
+      </article>
+
+      <article class="panel love-note" id="notes">
+        <div class="panel-heading">
+          <span class="heading-icon">✉</span>
+          <div>
+            <h2>A Little Love Note...</h2>
+            <p>Just for you 💗</p>
+          </div>
+        </div>
+
+        <div class="letter-wrap">
+          <span class="letter-heart">♥</span>
+          <p id="love-note-text">
+            Even when you miss me the most, just remember...<br>
+            I'm thinking about you,<br>
+            I love you, and I'll always be here.<br>
+            You mean the world to me, Avishka ♡
+          </p>
+          <span class="signature">– Bhavya ♡</span>
+        </div>
+
+        <button class="outline-button" id="another-note">↻ &nbsp; Read Another Note</button>
+      </article>
+
+      <article class="panel reassurance" id="just-for-you">
+        <div class="panel-heading">
+          <span class="heading-icon">♡</span>
+          <div>
+            <h2>I'm Always Here For You...</h2>
+            <p>Always. No matter what. 💗</p>
+          </div>
+        </div>
+
+        <div class="comfort-grid">
+          <button class="comfort-tile" data-message="Close your eyes, Shona. Imagine the biggest, warmest hug from me. Holding you close until you feel a little better. 🧸">
+            <span>🧸</span><strong>Hug Me</strong><small>(Always)</small>
+          </button>
+          <button class="comfort-tile" data-message="Just a reminder, my love: you are loved, you are enough, and you never have to earn my care. You matter so much to me. 💗">
+            <span>♥</span><strong>Remind You</strong><small>You're Enough</small>
+          </button>
+          <button class="comfort-tile" data-message="Sending you a thousand kisses, a million cuddles, and all the love I have. Consider this your unlimited love delivery. 🎁">
+            <span>🎁</span><strong>Send You</strong><small>More Love</small>
+          </button>
+          <button class="comfort-tile warm" data-message="Rest well, baby. Unclench your jaw, relax your shoulders, and take one slow breath. You deserve a gentle night. I'll be here when you wake. 🌙">
+            <span>☾</span><strong>Rest Well, Baby</strong><small>I'll be here ♡</small>
+          </button>
+          <button class="comfort-tile lilac" data-message="Think of our favourite little moments: the laughs, the talks, the silly things only we understand, and every memory that makes distance feel smaller. Every moment with you is one I keep close to my heart. 📸">
+            <span>📸</span><strong>Remember Us</strong><small>Our sweetest memories</small>
+          </button>
+          <button class="comfort-tile warm" data-message="I promise to keep choosing you through every season, every distance, and every tomorrow. I will keep making room for your dreams, protecting our laughter, and loving you with my whole heart. Whatever comes next, I want it to be with you. Forever is my favourite promise because it has you in it. 💍">
+            <span>💍</span><strong>Forever Promise</strong><small>Always you and me ♡</small>
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <!-- OPEN WHEN LETTERS -->
+    <section class="feature-section" id="open-when">
+      <div class="section-intro">
+        <p class="eyebrow">For every kind of day</p>
+        <h2>Open When, My Love... 💌</h2>
+        <p>Pick the letter that matches your heart right now.</p>
+      </div>
+
+      <div class="open-when-grid">
+        <button class="letter-card" data-letter="miss">
+          <span class="letter-emoji">💌</span>
+          <strong>Open when you miss me</strong>
+          <small>A little closeness from far away</small>
+        </button>
+        <button class="letter-card" data-letter="sad">
+          <span class="letter-emoji">🌷</span>
+          <strong>Open when you're sad</strong>
+          <small>You don't have to hide your feelings</small>
+        </button>
+        <button class="letter-card" data-letter="overthink">
+          <span class="letter-emoji">☁️</span>
+          <strong>Open when you overthink</strong>
+          <small>Let's slow those thoughts down</small>
+        </button>
+        <button class="letter-card" data-letter="sleep">
+          <span class="letter-emoji">🌙</span>
+          <strong>Open when you can't sleep</strong>
+          <small>A soft goodnight hug</small>
+        </button>
+        <button class="letter-card" data-letter="angry">
+          <span class="letter-emoji">🧸</span>
+          <strong>Open when you're upset with me</strong>
+          <small>Let's talk gently, when you're ready</small>
+        </button>
+        <button class="letter-card" data-letter="happy">
+          <span class="letter-emoji">🎀</span>
+          <strong>Open when you're happy</strong>
+          <small>I want to celebrate with you</small>
+        </button>
+      </div>
+    </section>
+
+    <!-- 100 REASONS JAR -->
+    <section class="feature-section" id="reasons-jar">
+      <div class="section-intro">
+        <p class="eyebrow">A hundred little things</p>
+        <h2>100 Reasons I Love You ♡</h2>
+        <p>Shake the jar and let one reason find you.</p>
+      </div>
+
+      <div class="reason-jar-card">
+        <div class="jar-art" aria-hidden="true">
+          <span>💗</span><span>💕</span><span>💖</span><span>♡</span><span>💘</span>
+        </div>
+        <p class="jar-reason" id="jar-reason">I love the way you make ordinary moments feel special.</p>
+        <p class="jar-count" id="jar-count">A little reason, just for you ♡</p>
+        <button class="primary-button" id="reason-button">Pick a reason ♡</button>
+      </div>
+    </section>
+
+    <!-- TEDDY MOOD CORNER -->
+    <section class="feature-section" id="teddy-corner">
+      <div class="section-intro">
+        <p class="eyebrow">Tell teddy how you feel</p>
+        <h2>Teddy's Here For You 🧸</h2>
+        <p>Choose a mood and teddy will send you a little message from me.</p>
+      </div>
+
+      <div class="teddy-corner-card">
+        <div class="talking-teddy" id="talking-teddy" aria-hidden="true">🧸</div>
+        <div class="mood-buttons" role="group" aria-label="Choose your mood">
+          <button class="mood-button" data-mood="miss">🥺 I miss you</button>
+          <button class="mood-button" data-mood="sad">🌧️ I'm sad</button>
+          <button class="mood-button" data-mood="attention">🐻 I need attention</button>
+          <button class="mood-button" data-mood="happy">🌈 I'm happy</button>
+        </div>
+        <p class="teddy-message" id="teddy-message" aria-live="polite">
+          Hi Shona! Teddy is on cuddle duty today. Pick how you're feeling, and I'll bring you a little message. ♡
+        </p>
+      </div>
+    </section>
+
+    <!-- SECRET SURPRISE AND DAILY MESSAGE -->
+    <section class="feature-section mini-feature-grid" id="daily-love">
+      <article class="mini-feature-card surprise-card">
+        <span class="feature-big-icon">🎁</span>
+        <p class="eyebrow">Psst... a little secret</p>
+        <h2>Something Just for You</h2>
+        <p>There's a tiny surprise here, made with a whole lot of love.</p>
+        <button class="primary-button" id="surprise-button">Open your surprise ♡</button>
+      </article>
+
+      <article class="mini-feature-card daily-card">
+        <span class="feature-big-icon">🌸</span>
+        <p class="eyebrow">Today's little reminder</p>
+        <h2>A Message for Today</h2>
+        <p class="daily-message" id="daily-message">Loading a little love for today...</p>
+        <small class="daily-date" id="daily-date"></small>
+      </article>
+    </section>
+
+    <!-- FOREVER -->
+    <section class="forever-banner" id="forever">
+      <div class="sleepy-teddy" aria-hidden="true">🧸</div>
+      <div class="forever-copy">
+        <h2>You miss me? I miss you more ♡</h2>
+        <p>You're never alone, my love... I'll always be here for you. ♡</p>
+        <span class="underline-heart">♡ ───────── ♡</span>
+      </div>
+      <button class="forever-button" id="forever-button">Forever & Always ♡</button>
+    </section>
+  </main>
+
+  <!-- POPUP -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="modal-backdrop" id="modal" hidden>
+    <section class="hug-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="close-modal" id="close-modal" aria-label="Close">×</button>
+      <div class="modal-teddy">🧸💗</div>
+      <h2 id="modal-title">A big hug, just for you!</h2>
+      <p id="modal-message">Imagine I'm wrapping my arms around you and holding you close. You are so loved, Shona. ♡</p>
+      <button class="primary-button" id="hug-again">One more hug ♡</button>
+    </section>
+  </div>
+
+  <footer>Made with all my love, just for you, Avishka ♡</footer>
+</body>
+</html>
